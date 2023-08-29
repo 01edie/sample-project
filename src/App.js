@@ -1,24 +1,334 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import HeaderBar from "./components/Header";
+import { Grid, Typography, Box, Button } from "@mui/material";
+import { deepOrange } from "@mui/material/colors";
+
+import BarChartComp from "./components/BarChart";
+import News from "./components/News";
+import Map from './components/Map.svg'
+
+
+export const options = {
+  region: "IN", // Africa
+  colorAxis: { colors: ["#00853f", "black", "#e31b23"] },
+  backgroundColor: "#81d4fa",
+  datalessRegionColor: "#f8bbd0",
+  defaultColor: "#f5f5f5",
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <HeaderBar />
+      <Box mt={2} marginX={1}>
+        <Grid container spacing={1}>
+          <Grid item xs={2.4}>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                bgcolor: deepOrange[500],
+                height: "36px",
+                borderRadius: 1,
+              }}
+            >
+              <Typography
+                sx={{
+                  color: "#efefef",
+                  fontSize: "18px",
+                  fontFamily: "Roboto",
+                }}
+              >
+                Status
+              </Typography>
+            </Box>
+          </Grid>
+          <Grid item xs={2.4}>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                bgcolor: deepOrange[500],
+                height: "36px",
+                borderRadius: 1,
+              }}
+            >
+              <Typography
+                sx={{ color: "#fff", fontSize: "18px", fontFamily: "Roboto" }}
+              >
+                Schools
+              </Typography>
+            </Box>
+          </Grid>
+          <Grid item xs={2.4}>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                bgcolor: deepOrange[500],
+                height: "36px",
+                borderRadius: 1,
+              }}
+            >
+              <Typography
+                sx={{ color: "#fff", fontSize: "18px", fontFamily: "Roboto" }}
+              >
+                Students
+              </Typography>
+            </Box>
+          </Grid>
+          <Grid item xs={2.4}>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                bgcolor: deepOrange[500],
+                height: "36px",
+                borderRadius: 1,
+              }}
+            >
+              <Typography
+                sx={{ color: "#fff", fontSize: "18px", fontFamily: "Roboto" }}
+              >
+                States
+              </Typography>
+            </Box>
+          </Grid>
+          <Grid item xs={2.4}>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                bgcolor: deepOrange[500],
+                height: "36px",
+                borderRadius: 1,
+              }}
+            >
+              <Typography
+                sx={{ color: "#fff", fontSize: "18px", fontFamily: "Roboto" }}
+              >
+                Cities
+              </Typography>
+            </Box>
+          </Grid>
+        </Grid>
+
+        <Grid container spacing={1} mt="-2px">
+          <Grid item xs={2.4}>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                bgcolor: deepOrange[500],
+                height: "36px",
+                borderRadius: 1,
+              }}
+            >
+              <Typography
+                sx={{ color: "#fff", fontSize: "18px", fontFamily: "Roboto" }}
+              >
+                Planned
+              </Typography>
+            </Box>
+          </Grid>
+          <Grid item xs={2.4}>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                bgcolor: deepOrange[500],
+                height: "36px",
+                borderRadius: 1,
+              }}
+            >
+              <Typography
+                sx={{ color: "#fff", fontSize: "18px", fontFamily: "Roboto" }}
+              >
+                12500
+              </Typography>
+            </Box>
+          </Grid>
+          <Grid item xs={2.4}>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                bgcolor: deepOrange[500],
+                height: "36px",
+                borderRadius: 1,
+              }}
+            >
+              <Typography
+                sx={{ color: "#fff", fontSize: "18px", fontFamily: "Roboto" }}
+              >
+                30.50L
+              </Typography>
+            </Box>
+          </Grid>
+          <Grid item xs={2.4}>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                bgcolor: deepOrange[500],
+                height: "36px",
+                borderRadius: 1,
+              }}
+            >
+              <Typography
+                sx={{ color: "#fff", fontSize: "18px", fontFamily: "Roboto" }}
+              >
+                13
+              </Typography>
+            </Box>
+          </Grid>
+          <Grid item xs={2.4}>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                bgcolor: deepOrange[500],
+                height: "36px",
+                borderRadius: 1,
+              }}
+            >
+              <Typography
+                sx={{ color: "#fff", fontSize: "18px", fontFamily: "Roboto" }}
+              >
+                130
+              </Typography>
+            </Box>
+          </Grid>
+        </Grid>
+
+        <Grid container spacing={1} mt="-2px">
+          <Grid item xs={2.4}>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                bgcolor: deepOrange[500],
+                height: "36px",
+                borderRadius: 1,
+              }}
+            >
+              <Typography
+                sx={{ color: "#fff", fontSize: "18px", fontFamily: "Roboto" }}
+              >
+                Covered
+              </Typography>
+            </Box>
+          </Grid>
+          <Grid item xs={2.4}>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                bgcolor: deepOrange[500],
+                height: "36px",
+                borderRadius: 1,
+              }}
+            >
+              <Typography
+                sx={{ color: "#fff", fontSize: "18px", fontFamily: "Roboto" }}
+              >
+                972
+              </Typography>
+            </Box>
+          </Grid>
+          <Grid item xs={2.4}>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                bgcolor: deepOrange[500],
+                height: "36px",
+                borderRadius: 1,
+              }}
+            >
+              <Typography
+                sx={{ color: "#fff", fontSize: "18px", fontFamily: "Roboto" }}
+              >
+                2.86L
+              </Typography>
+            </Box>
+          </Grid>
+          <Grid item xs={2.4}>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                bgcolor: deepOrange[500],
+                height: "36px",
+                borderRadius: 1,
+              }}
+            >
+              <Typography
+                sx={{ color: "#fff", fontSize: "18px", fontFamily: "Roboto" }}
+              >
+                12
+              </Typography>
+            </Box>
+          </Grid>
+          <Grid item xs={2.4}>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                bgcolor: deepOrange[500],
+                height: "36px",
+                borderRadius: 1,
+              }}
+            >
+              <Typography
+                sx={{ color: "#fff", fontSize: "18px", fontFamily: "Roboto" }}
+              >
+                35
+              </Typography>
+            </Box>
+          </Grid>
+        </Grid>
+      </Box>
+      <Box className="chart" marginTop={2} marginX={1}>
+        <Grid container spacing={2}>
+        <Grid item xs={6} sx={{display:'flex', justifyContent:'center', bgcolor:'#fff', position:'relative'}} >
+          <Typography sx={{position:"absolute", right:'90px', top:'90px'}} variant="h6">Geographical Distribution</Typography>
+            <Box component='img' src={Map} height={500}/>
+          </Grid>
+          <Grid item xs={6} >
+          <Typography variant="h6">Top 10 by Target</Typography>
+            <div style={{height:'400px', backgroundImage:'url(/tiranga_bg.png)',backgroundSize:'cover'}}>
+            <BarChartComp />
+            
+            </div>
+            <Box mt={5} display='flex' justifyContent='center'>
+            <Button variant="outlined" size="small" >
+              View More
+            </Button>
+            </Box>
+          </Grid>
+        </Grid>
+      </Box>
+
+      <Box marginX={1} my={4}>
+        <News/>
+      </Box>
+    </>
   );
 }
 
