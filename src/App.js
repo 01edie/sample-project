@@ -1,7 +1,7 @@
 import "./App.css";
 import HeaderBar from "./components/Header";
 import { Grid, Typography, Box, Button } from "@mui/material";
-import { deepOrange } from "@mui/material/colors";
+import { deepOrange, green } from "@mui/material/colors";
 
 import BarChartComp from "./components/BarChart";
 import News from "./components/News";
@@ -28,14 +28,15 @@ function App() {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                bgcolor: deepOrange[500],
+                background: 'linear-gradient(33deg, #ff9933 0 28.3%, white 33% 61.6%, green 66% 100%)',
+                backgroundSize: 'cover',
                 height: "36px",
                 borderRadius: 1,
               }}
             >
               <Typography
                 sx={{
-                  color: "#efefef",
+                  color: "#000",
                   fontSize: "18px",
                   fontFamily: "Roboto",
                 }}
@@ -50,7 +51,7 @@ function App() {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                bgcolor: deepOrange[500],
+                bgcolor: '#ff9933',
                 height: "36px",
                 borderRadius: 1,
               }}
@@ -68,7 +69,7 @@ function App() {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                bgcolor: deepOrange[500],
+                bgcolor: '#ff9933',
                 height: "36px",
                 borderRadius: 1,
               }}
@@ -86,7 +87,7 @@ function App() {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                bgcolor: deepOrange[500],
+                bgcolor: '#ff9933',
                 height: "36px",
                 borderRadius: 1,
               }}
@@ -104,7 +105,7 @@ function App() {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                bgcolor: deepOrange[500],
+                bgcolor: '#ff9933',
                 height: "36px",
                 borderRadius: 1,
               }}
@@ -125,13 +126,14 @@ function App() {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                bgcolor: deepOrange[500],
+                background: 'linear-gradient(33deg, #ff9933 0 28.3%, white 33% 61.6%, green 66% 100%)',
+                backgroundSize: 'cover',
                 height: "36px",
                 borderRadius: 1,
               }}
             >
               <Typography
-                sx={{ color: "#fff", fontSize: "18px", fontFamily: "Roboto" }}
+                sx={{ color: "#000", fontSize: "18px", fontFamily: "Roboto" }}
               >
                 Planned
               </Typography>
@@ -143,13 +145,13 @@ function App() {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                bgcolor: deepOrange[500],
+                bgcolor: '#fff',
                 height: "36px",
                 borderRadius: 1,
               }}
             >
               <Typography
-                sx={{ color: "#fff", fontSize: "18px", fontFamily: "Roboto" }}
+                sx={{ color: "#000", fontSize: "18px", fontFamily: "Roboto" }}
               >
                 12500
               </Typography>
@@ -161,13 +163,13 @@ function App() {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                bgcolor: deepOrange[500],
+                bgcolor: '#fff',
                 height: "36px",
                 borderRadius: 1,
               }}
             >
               <Typography
-                sx={{ color: "#fff", fontSize: "18px", fontFamily: "Roboto" }}
+                sx={{ color: "#000", fontSize: "18px", fontFamily: "Roboto" }}
               >
                 30.50L
               </Typography>
@@ -179,13 +181,13 @@ function App() {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                bgcolor: deepOrange[500],
+                bgcolor: '#fff',
                 height: "36px",
                 borderRadius: 1,
               }}
             >
               <Typography
-                sx={{ color: "#fff", fontSize: "18px", fontFamily: "Roboto" }}
+                sx={{ color: "#000", fontSize: "18px", fontFamily: "Roboto" }}
               >
                 13
               </Typography>
@@ -197,13 +199,13 @@ function App() {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                bgcolor: deepOrange[500],
+                bgcolor: '#fff',
                 height: "36px",
                 borderRadius: 1,
               }}
             >
               <Typography
-                sx={{ color: "#fff", fontSize: "18px", fontFamily: "Roboto" }}
+                sx={{ color: "#000", fontSize: "18px", fontFamily: "Roboto" }}
               >
                 130
               </Typography>
@@ -218,13 +220,14 @@ function App() {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                bgcolor: deepOrange[500],
+                background: 'linear-gradient(33deg, #ff9933 0 28.3%, white 33% 61.6%, green 66% 100%)',
+                backgroundSize: 'cover',
                 height: "36px",
                 borderRadius: 1,
               }}
             >
               <Typography
-                sx={{ color: "#fff", fontSize: "18px", fontFamily: "Roboto" }}
+                sx={{ color: "#000", fontSize: "18px", fontFamily: "Roboto" }}
               >
                 Covered
               </Typography>
@@ -236,7 +239,7 @@ function App() {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                bgcolor: deepOrange[500],
+                bgcolor: green[500],
                 height: "36px",
                 borderRadius: 1,
               }}
@@ -254,7 +257,7 @@ function App() {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                bgcolor: deepOrange[500],
+                bgcolor: green[500],
                 height: "36px",
                 borderRadius: 1,
               }}
@@ -272,7 +275,7 @@ function App() {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                bgcolor: deepOrange[500],
+                bgcolor: green[500],
                 height: "36px",
                 borderRadius: 1,
               }}
@@ -290,7 +293,7 @@ function App() {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                bgcolor: deepOrange[500],
+                bgcolor: green[500],
                 height: "36px",
                 borderRadius: 1,
               }}
@@ -308,10 +311,10 @@ function App() {
         <Grid container spacing={2}>
         <Grid item xs={6} sx={{display:'flex', justifyContent:'center', bgcolor:'#fff', position:'relative'}} >
           <Typography sx={{position:"absolute", right:'90px', top:'90px'}} variant="h6">Geographical Distribution</Typography>
-            <Box component='img' src={Map} height={500}/>
+            <Box component='img' src='/Map01.jpg' height={500}/>
           </Grid>
           <Grid item xs={6} >
-          <Typography variant="h6">Top 10 by Target</Typography>
+          <Typography variant="h6" mb={1}>Top 10 by Target</Typography>
             <div style={{height:'400px', backgroundImage:'url(/tiranga_bg.png)',backgroundSize:'cover'}}>
             <BarChartComp />
             
