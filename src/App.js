@@ -1,11 +1,10 @@
 import "./App.css";
 import HeaderBar from "./components/Header";
 import { Grid, Typography, Box, Button } from "@mui/material";
-import { deepOrange, green } from "@mui/material/colors";
+import {  green } from "@mui/material/colors";
 
 import BarChartComp from "./components/BarChart";
 import News from "./components/News";
-import Map from './components/Map.svg'
 
 
 export const options = {
